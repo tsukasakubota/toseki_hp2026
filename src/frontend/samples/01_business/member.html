@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>組合員専用ポータル | 東京都石油業協同組合</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-900 font-sans">
+    <!-- Member Header -->
+    <header class="bg-white border-b border-slate-200">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="./top.html" class="flex items-center space-x-2">
+                    <div class="bg-slate-900 p-1 rounded">
+                        <div class="w-6 h-6 bg-blue-700 flex items-center justify-center font-bold text-white text-xs">石</div>
+                    </div>
+                    <span class="font-bold text-slate-800 tracking-tight text-sm hidden md:block">東京都石油業協同組合 組合員ポータル</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-xs">東</div>
+                    <span class="text-sm font-medium text-slate-700">東京石油商事 株式会社 様</span>
+                </div>
+                <button class="text-xs text-slate-500 hover:text-slate-900 transition">ログアウト</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+        <!-- Sidebar Navigation -->
+        <aside class="w-full md:w-64 shrink-0">
+            <nav class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-600 text-white rounded-md font-bold shadow-sm transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011-1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                    <span>ダッシュボード</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-slate-600 hover:bg-white hover:text-blue-600 rounded-md transition font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                    <span>重要なお知らせ</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-slate-600 hover:bg-white hover:text-blue-600 rounded-md transition font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" /></svg>
+                    <span>資料ダウンロード</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-slate-600 hover:bg-white hover:text-blue-600 rounded-md transition font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586L7.707 10.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd" /></svg>
+                    <span>補助金・助成金申請</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-slate-600 hover:bg-white hover:text-blue-600 rounded-md transition font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></svg>
+                    <span>市況データ</span>
+                </a>
+                <div class="pt-4 mt-4 border-t border-slate-200">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-slate-500 hover:text-slate-800 rounded-md transition text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                        <span>登録情報変更</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Summary Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">未読の通知</p>
+                    <div class="flex items-end justify-between">
+                        <span class="text-3xl font-bold text-blue-600">4</span>
+                        <span class="text-xs text-slate-400">最終更新: 今日 09:30</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">申請中の補助金</p>
+                    <div class="flex items-end justify-between">
+                        <span class="text-3xl font-bold text-slate-800">1</span>
+                        <span class="text-xs text-orange-500 font-bold italic underline cursor-pointer">審査中 &rarr;</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">次回経営セミナー</p>
+                    <div class="flex items-end justify-between">
+                        <span class="text-xl font-bold text-slate-800">2月10日</span>
+                        <span class="text-xs text-blue-600 font-bold cursor-pointer">詳細を見る</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News and Actions -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Important Notices -->
+                <section class="bg-white rounded-lg shadow-sm border border-slate-200 flex flex-col">
+                    <div class="px-6 py-4 border-b border-slate-100 flex justify-between items-center">
+                        <h2 class="font-bold text-slate-800">組合員向け重要なお知らせ</h2>
+                        <a href="#" class="text-xs text-blue-600 font-bold hover:underline">もっと見る</a>
+                    </div>
+                    <div class="p-6 space-y-4 flex-grow">
+                        <div class="flex items-start space-x-4 pb-4 border-b border-slate-50 last:border-0">
+                            <span class="bg-red-100 text-red-700 text-[10px] px-2 py-0.5 rounded font-bold uppercase shrink-0 mt-1">緊急</span>
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-900 leading-snug">【至急】2026年度 揮発油販売業者登録更新手続きについて</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">締切：2026年1月31日</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 pb-4 border-b border-slate-50 last:border-0">
+                            <span class="bg-slate-100 text-slate-700 text-[10px] px-2 py-0.5 rounded font-bold uppercase shrink-0 mt-1">一般</span>
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-900 leading-snug">燃料配送コスト上昇に関する実態調査への協力のお願い</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">2026年1月20日 掲載</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 pb-4 border-b border-slate-50 last:border-0">
+                            <span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-0.5 rounded font-bold uppercase shrink-0 mt-1">補助</span>
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-900 leading-snug">「給油所レジリエンス強化補助金」の公募詳細が発表されました</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">2026年1月18日 掲載</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Actions / Downloads -->
+                <section class="bg-slate-800 rounded-lg shadow-md text-white flex flex-col">
+                    <div class="px-6 py-4 border-b border-white/10 flex justify-between items-center">
+                        <h2 class="font-bold">クイックアクセス</h2>
+                    </div>
+                    <div class="p-6 grid grid-cols-2 gap-4 flex-grow">
+                        <a href="#" class="bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-md transition text-center group">
+                            <div class="bg-blue-600 w-10 h-10 rounded-full mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                            </div>
+                            <span class="text-xs font-bold block">申請様式集</span>
+                        </a>
+                        <a href="#" class="bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-md transition text-center group">
+                            <div class="bg-green-600 w-10 h-10 rounded-full mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <span class="text-xs font-bold block">過去の配布資料</span>
+                        </a>
+                        <a href="#" class="bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-md transition text-center group">
+                            <div class="bg-orange-600 w-10 h-10 rounded-full mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            </div>
+                            <span class="text-xs font-bold block">セミナー予約</span>
+                        </a>
+                        <a href="#" class="bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-md transition text-center group">
+                            <div class="bg-slate-600 w-10 h-10 rounded-full mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            </div>
+                            <span class="text-xs font-bold block">事務局へのお問合せ</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Simple Dashboard Footer -->
+    <footer class="mt-auto py-8 text-center text-slate-400 text-[10px] uppercase tracking-widest border-t border-slate-200 bg-white">
+        &copy; 2026 Tokyo Petroleum Dealers Association Member Portal.
+    </footer>
+</body>
+</html>

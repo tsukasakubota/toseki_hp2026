@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Portal | TPDA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            letter-spacing: 0.01em;
+        }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-neutral-900 antialiased">
+    <!-- Header -->
+    <header class="bg-white border-b border-neutral-100">
+        <div class="container mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-10">
+                <a href="./top.html" class="text-xs font-bold tracking-[0.4em] uppercase">TPDA</a>
+                <span class="text-[10px] text-neutral-300 font-medium uppercase tracking-widest">Member Portal</span>
+            </div>
+            <div class="flex items-center space-x-8">
+                <span class="text-[10px] font-medium text-neutral-400 uppercase tracking-widest">Tokyo Petro Commercial Inc.</span>
+                <button class="text-[10px] font-bold uppercase tracking-widest hover:text-neutral-400 transition">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-8 py-20 flex flex-col md:flex-row gap-24">
+        <!-- Minimal Nav -->
+        <aside class="w-full md:w-48 shrink-0">
+            <nav class="space-y-8">
+                <div>
+                    <h2 class="text-[10px] font-bold text-neutral-300 uppercase tracking-[0.3em] mb-6">Menu</h2>
+                    <ul class="space-y-4 text-[11px] font-medium tracking-widest uppercase">
+                        <li><a href="#" class="text-neutral-900">Dashboard</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-neutral-900 transition">Notices</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-neutral-900 transition">Documents</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-neutral-900 transition">Statistics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[10px] font-bold text-neutral-300 uppercase tracking-[0.3em] mb-6">Support</h2>
+                    <ul class="space-y-4 text-[11px] font-medium tracking-widest uppercase">
+                        <li><a href="#" class="text-neutral-400 hover:text-neutral-900 transition">Inquiry</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-neutral-900 transition">Account</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Greetings -->
+            <div class="mb-24">
+                <h3 class="text-3xl font-light text-neutral-950 mb-4">Dashboard</h3>
+                <p class="text-sm text-neutral-400 font-light">Welcome back. Systems are operational.</p>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+                <section>
+                    <h4 class="text-[10px] font-bold text-neutral-300 uppercase tracking-[0.3em] mb-8 border-b border-neutral-100 pb-2">Latest Notice</h4>
+                    <div class="space-y-10">
+                        <div class="group cursor-pointer">
+                            <p class="text-[9px] text-neutral-400 font-bold tracking-widest uppercase mb-2">22.01.2026</p>
+                            <h5 class="text-base font-light group-hover:text-neutral-400 transition leading-snug">揮発油販売業者登録更新：手続き期限が1月31日に迫っています。</h5>
+                        </div>
+                        <div class="group cursor-pointer">
+                            <p class="text-[9px] text-neutral-400 font-bold tracking-widest uppercase mb-2">18.01.2026</p>
+                            <h5 class="text-base font-light group-hover:text-neutral-400 transition leading-snug">レジリエンス強化補助金：二次公募の要綱が決定しました。</h5>
+                        </div>
+                        <div class="group cursor-pointer">
+                            <p class="text-[9px] text-neutral-400 font-bold tracking-widest uppercase mb-2">15.01.2026</p>
+                            <h5 class="text-base font-light group-hover:text-neutral-400 transition leading-snug">インボイス制度：組合員向け個別相談会の追加日程。</h5>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="space-y-12">
+                    <div>
+                        <h4 class="text-[10px] font-bold text-neutral-300 uppercase tracking-[0.3em] mb-8 border-b border-neutral-100 pb-2">Market Data</h4>
+                        <div class="flex items-baseline space-x-4">
+                            <span class="text-5xl font-light tracking-tighter">142.8</span>
+                            <span class="text-xs text-neutral-400 uppercase tracking-widest">JPY / Index</span>
+                        </div>
+                        <p class="text-[9px] text-neutral-300 font-bold uppercase tracking-widest mt-4 italic">Updated: Today 09:30</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-[10px] font-bold text-neutral-300 uppercase tracking-[0.3em] mb-8 border-b border-neutral-100 pb-2">Resources</h4>
+                        <div class="grid grid-cols-1 gap-4">
+                            <a href="#" class="flex justify-between items-center text-[11px] font-medium tracking-widest uppercase hover:text-neutral-400 transition">
+                                <span>Application Form Package</span>
+                                <span>PDF</span>
+                            </a>
+                            <a href="#" class="flex justify-between items-center text-[11px] font-medium tracking-widest uppercase hover:text-neutral-400 transition">
+                                <span>Annual Report 2025</span>
+                                <span>PDF</span>
+                            </a>
+                            <a href="#" class="flex justify-between items-center text-[11px] font-medium tracking-widest uppercase hover:text-neutral-400 transition">
+                                <span>Safety Checklist</span>
+                                <span>XLS</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer class="container mx-auto px-8 py-20 border-t border-neutral-100">
+        <p class="text-[9px] text-neutral-200 uppercase tracking-[0.5em] text-center">
+            TPDA Member System &copy; 2026
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京都石油業協同組合 - シンプルデザイン案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            letter-spacing: 0.02em;
+        }
+        .thin-line { height: 1px; background-color: #e5e7eb; }
+    </style>
+</head>
+<body class="bg-white text-neutral-900 antialiased">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-8 py-10 flex justify-between items-center">
+        <div class="flex items-center space-x-12">
+            <a href="#" class="text-sm font-bold tracking-[0.3em] uppercase">TPDA</a>
+            <div class="hidden md:flex space-x-8 text-[11px] font-medium uppercase tracking-widest text-neutral-400">
+                <a href="#" class="hover:text-black transition">Overview</a>
+                <a href="#" class="hover:text-black transition">Service</a>
+                <a href="#" class="hover:text-black transition">Location</a>
+            </div>
+        </div>
+        <div>
+            <a href="./member.html" class="text-[11px] font-bold uppercase tracking-widest border-b border-black pb-1 hover:text-neutral-500 hover:border-neutral-500 transition">
+                Members Only
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Simple) -->
+    <main class="container mx-auto px-8 pt-20 pb-40">
+        <div class="max-w-3xl">
+            <h1 class="text-xs font-bold text-neutral-400 uppercase tracking-[0.5em] mb-12">Tokyo Petroleum Dealers Association</h1>
+            <h2 class="text-5xl md:text-7xl font-light leading-[1.1] mb-16 tracking-tight text-neutral-950">
+                Essential energy<br>for the city life.
+            </h2>
+            <div class="thin-line w-24 mb-16"></div>
+            <p class="text-lg text-neutral-500 font-light leading-relaxed max-w-xl mb-20">
+                東京都石油業協同組合。1950年の設立以来、私たちは東京のインフラを支え、組合員の持続可能な経営を追求しています。シンプルに、かつ誠実に。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-12">
+                <a href="#" class="group flex items-center space-x-4">
+                    <span class="text-xs font-bold uppercase tracking-widest">Read Our Mission</span>
+                    <span class="w-10 h-[1px] bg-black group-hover:w-16 transition-all"></span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Visual Divider -->
+    <section class="container mx-auto px-8 mb-40">
+        <div class="h-[60vh] bg-neutral-100 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop" alt="Architecture" class="w-full h-full object-cover grayscale hover:scale-105 transition duration-1000">
+        </div>
+    </section>
+
+    <!-- News (Minimal) -->
+    <section class="container mx-auto px-8 py-32 border-t border-neutral-100">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-20">
+            <h3 class="text-xs font-bold uppercase tracking-[0.5em] text-neutral-400 shrink-0">News</h3>
+            <div class="flex-grow max-w-2xl space-y-16">
+                <article class="group cursor-pointer">
+                    <p class="text-[10px] text-neutral-400 mb-4 font-bold tracking-widest uppercase italic">22 Jan 2026</p>
+                    <h4 class="text-xl font-light group-hover:text-neutral-500 transition leading-snug">
+                        燃料備蓄推進事業：令和8年度の申請ガイドラインを公開しました。
+                    </h4>
+                </article>
+                <article class="group cursor-pointer">
+                    <p class="text-[10px] text-neutral-400 mb-4 font-bold tracking-widest uppercase italic">15 Jan 2026</p>
+                    <h4 class="text-xl font-light group-hover:text-neutral-500 transition leading-snug">
+                        次世代経営者セミナー：デジタル・トランスフォーメーションの要諦。
+                    </h4>
+                </article>
+                <article class="group cursor-pointer">
+                    <p class="text-[10px] text-neutral-400 mb-4 font-bold tracking-widest uppercase italic">10 Jan 2026</p>
+                    <h4 class="text-xl font-light group-hover:text-neutral-500 transition leading-snug">
+                        災害時優先供給：都内各自治体との連携強化に関する進捗報告。
+                    </h4>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Simple) -->
+    <footer class="container mx-auto px-8 pt-40 pb-20 border-t border-neutral-100">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-20 mb-32">
+            <div class="col-span-1 md:col-span-2">
+                <p class="text-xs font-bold tracking-[0.3em] uppercase mb-8">TPDA</p>
+                <p class="text-xs text-neutral-400 leading-loose max-w-xs">
+                    〒104-0061 東京都中央区銀座8-10-7 第十吉蔵ビル<br>
+                    Tokyo Petroleum Dealers Association.
+                </p>
+            </div>
+            <div>
+                <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Menu</h5>
+                <ul class="space-y-4 text-[10px] text-neutral-400 font-medium uppercase tracking-widest">
+                    <li><a href="#" class="hover:text-black transition">Introduction</a></li>
+                    <li><a href="#" class="hover:text-black transition">Directors</a></li>
+                    <li><a href="#" class="hover:text-black transition">History</a></li>
+                    <li><a href="#" class="hover:text-black transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Social</h5>
+                <ul class="space-y-4 text-[10px] text-neutral-400 font-medium uppercase tracking-widest">
+                    <li><a href="#" class="hover:text-black transition">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-black transition">Twitter</a></li>
+                    <li><a href="#" class="hover:text-black transition">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <p class="text-[9px] text-neutral-300 uppercase tracking-[0.3em]">
+                &copy; 2026 TPDA
+            </p>
+            <p class="text-[9px] text-neutral-300 uppercase tracking-[0.3em]">
+                Design by TPDA Studio
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

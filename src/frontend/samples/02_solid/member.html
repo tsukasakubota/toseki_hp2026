@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>組合員専用入口 | 東京都石油業協同組合</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Shippori+Mincho:wght@700&display=swap');
+        .serif { font-family: 'Shippori Mincho', 'Noto Serif JP', serif; }
+        body { font-family: 'Hiragino Mincho ProN', 'MS PMincho', serif; }
+        .sans { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; }
+    </style>
+</head>
+<body class="bg-[#f4f1ea] text-[#332211]">
+    <!-- Top Nav -->
+    <header class="bg-[#4a1a1a] text-[#ead8c2] py-4 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="./top.html" class="flex items-center space-x-3 group">
+                <div class="w-8 h-8 bg-[#ead8c2] text-[#4a1a1a] flex items-center justify-center font-bold serif group-hover:bg-white transition">石</div>
+                <span class="font-bold serif text-lg tracking-wider">東京都石油業協同組合 組合員専用ポータル</span>
+            </a>
+            <div class="flex items-center space-x-8 sans text-xs font-bold tracking-widest">
+                <div class="flex items-center space-x-2 border-r border-[#ead8c2]/30 pr-8">
+                    <span class="opacity-70">ログイン：</span>
+                    <span>東京石油商事 株式会社 様</span>
+                </div>
+                <a href="#" class="hover:text-white transition underline">ログアウト</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Sidebar -->
+            <aside class="w-full lg:w-72 shrink-0">
+                <div class="bg-white border-t-4 border-[#4a1a1a] shadow-sm p-8">
+                    <h2 class="serif font-bold text-xl mb-8 border-b border-[#f4f1ea] pb-4">主要目次</h2>
+                    <ul class="space-y-1 serif text-[15px]">
+                        <li>
+                            <a href="#" class="block py-3 px-4 bg-[#fdfaf5] text-[#4a1a1a] font-bold border-l-4 border-[#4a1a1a]">
+                                統合案内板
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-3 px-4 hover:bg-[#fdfaf5] transition border-l-4 border-transparent hover:border-[#4a1a1a]/30">
+                                事務局通達
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-3 px-4 hover:bg-[#fdfaf5] transition border-l-4 border-transparent hover:border-[#4a1a1a]/30">
+                                申請書類一覧
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-3 px-4 hover:bg-[#fdfaf5] transition border-l-4 border-transparent hover:border-[#4a1a1a]/30">
+                                市況統計資料
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-3 px-4 hover:bg-[#fdfaf5] transition border-l-4 border-transparent hover:border-[#4a1a1a]/30">
+                                法令改正・通知
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-3 px-4 hover:bg-[#fdfaf5] transition border-l-4 border-transparent hover:border-[#4a1a1a]/30">
+                                組合員慶弔規定
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-8 bg-[#4a1a1a] p-8 text-[#ead8c2] shadow-sm">
+                    <h3 class="serif font-bold mb-4 border-b border-[#ead8c2]/30 pb-2">緊急連絡先</h3>
+                    <p class="serif text-sm leading-loose">
+                        災害時優先供給ライン<br>
+                        <span class="text-xl font-bold sans tracking-tighter">03-XXXX-XXXX</span><br>
+                        （24時間受付）
+                    </p>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="flex-grow">
+                <!-- Important Banner -->
+                <div class="bg-white border border-[#4a1a1a]/20 p-8 mb-10 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-[#4a1a1a] text-white px-4 py-1 sans text-[10px] font-bold tracking-widest uppercase">Important</div>
+                    <h3 class="serif font-bold text-xl text-[#4a1a1a] mb-4">令和8年度 定時総会開催についてのご案内</h3>
+                    <p class="serif text-[15px] leading-loose text-[#554433]">
+                        本年度の定時総会を下記の通り開催いたします。組合員の皆様におかれましては、万障お繰り合わせの上、ご出席賜りますようお願い申し上げます。なお、出欠回答は本画面右下の専用フォームより送信いただけます。
+                    </p>
+                    <div class="mt-6 flex justify-end">
+                        <button class="bg-[#f4f1ea] hover:bg-[#ead8c2] px-6 py-2 serif text-sm font-bold border border-[#4a1a1a]/20 transition">詳細を確認する</button>
+                    </div>
+                </div>
+
+                <!-- 2 Column Layout for Widgets -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Announcements -->
+                    <div class="bg-white border-t-2 border-[#4a1a1a]/10 p-8 shadow-sm">
+                        <h4 class="serif font-bold text-lg mb-8 flex justify-between items-center">
+                            最新の通達事項
+                            <span class="sans text-[10px] font-bold opacity-40 uppercase tracking-widest">All Notice</span>
+                        </h4>
+                        <div class="space-y-6">
+                            <article class="group cursor-pointer">
+                                <time class="sans text-[10px] font-bold text-[#4a1a1a] block mb-1">2026.01.21</time>
+                                <h5 class="serif font-bold text-sm group-hover:underline leading-relaxed">石油販売業界における省エネ対策優良事例集の配布について</h5>
+                            </article>
+                            <article class="group cursor-pointer">
+                                <time class="sans text-[10px] font-bold text-[#4a1a1a] block mb-1">2026.01.18</time>
+                                <h5 class="serif font-bold text-sm group-hover:underline leading-relaxed">災害用自家発電機設置に係る補助金（二次募集）のお知らせ</h5>
+                            </article>
+                            <article class="group cursor-pointer">
+                                <time class="sans text-[10px] font-bold text-[#4a1a1a] block mb-1">2026.01.15</time>
+                                <h5 class="serif font-bold text-sm group-hover:underline leading-relaxed">【重要】インボイス制度対応に関する組合員実務相談会の実施</h5>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Market Data / Quick Links -->
+                    <div class="flex flex-col gap-10">
+                        <div class="bg-white border-t-2 border-[#4a1a1a]/10 p-8 shadow-sm">
+                            <h4 class="serif font-bold text-lg mb-6 italic">Weekly Market</h4>
+                            <div class="border-y border-[#f4f1ea] py-6 flex justify-between items-center">
+                                <span class="serif text-sm">先週比指標（東京市場）</span>
+                                <span class="sans font-bold text-xl text-red-700">＋1.2 pt</span>
+                            </div>
+                            <p class="text-[11px] serif text-[#887766] mt-4 leading-relaxed">
+                                ※毎週月曜日10時に更新されます。詳細は「市況統計資料」よりご確認ください。
+                            </p>
+                        </div>
+
+                        <div class="bg-[#fdfaf5] border border-[#4a1a1a]/10 p-8">
+                            <h4 class="serif font-bold text-sm mb-6 border-b border-[#4a1a1a]/10 pb-2">ダウンロード資料</h4>
+                            <div class="space-y-3">
+                                <a href="#" class="flex items-center text-xs serif hover:text-[#4a1a1a] group transition">
+                                    <span class="w-1.5 h-1.5 bg-[#4a1a1a] mr-3 rounded-full"></span>
+                                    組合加入申込書一式 (PDF)
+                                </a>
+                                <a href="#" class="flex items-center text-xs serif hover:text-[#4a1a1a] group transition">
+                                    <span class="w-1.5 h-1.5 bg-[#4a1a1a] mr-3 rounded-full"></span>
+                                    事業報告書（令和7年度版）
+                                </a>
+                                <a href="#" class="flex items-center text-xs serif hover:text-[#4a1a1a] group transition">
+                                    <span class="w-1.5 h-1.5 bg-[#4a1a1a] mr-3 rounded-full"></span>
+                                    安全点検チェックリスト
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="mt-20 py-10 bg-white border-t border-[#4a1a1a]/10 text-center">
+        <p class="serif text-[11px] text-[#887766] tracking-[0.2em] uppercase">
+            Tokyo Petroleum Dealers Association Member Portal &copy; 2026
+        </p>
+    </footer>
+</body>
+</html>

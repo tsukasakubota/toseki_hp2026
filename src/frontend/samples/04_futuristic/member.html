@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Terminal | TPDA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .font-tech { font-family: 'Space Grotesk', sans-serif; }
+        .bg-grid {
+            background-image: radial-gradient(circle at 1px 1px, rgba(56, 189, 248, 0.05) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(56, 189, 248, 0.1);
+        }
+        .scanner {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+            position: relative;
+            animation: scan 3s linear infinite;
+        }
+        @keyframes scan {
+            0% { transform: translateY(0); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(200px); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-grid min-h-screen">
+    <!-- Terminal Header -->
+    <header class="border-b border-sky-900/30 glass sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <div class="font-tech font-bold text-sky-400 tracking-tighter flex items-center">
+                    <span class="mr-2">TERMINAL_ID:</span>
+                    <span class="bg-sky-500/20 px-2 py-0.5 rounded text-xs">MEMBER_8829</span>
+                </div>
+                <div class="hidden md:flex space-x-4 font-tech text-[10px] text-slate-500">
+                    <span class="flex items-center"><span class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2 animate-pulse"></span> SYSTEM_ONLINE</span>
+                    <span>LAT: 35.6895</span>
+                    <span>LNG: 139.6917</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="text-right">
+                    <p class="font-tech text-[10px] text-sky-500 font-bold leading-none">TOKYO_PETRO_COMMERCIAL_INC</p>
+                    <p class="text-[9px] text-slate-500 mt-1 uppercase">Authentication Confirmed</p>
+                </div>
+                <div class="w-8 h-8 rounded-full border border-sky-500/50 flex items-center justify-center p-1">
+                    <div class="w-full h-full bg-sky-500/20 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Side Navigation -->
+            <nav class="col-span-12 lg:col-span-2 space-y-2">
+                <a href="#" class="block p-3 rounded glass border-sky-500/50 text-sky-400 font-tech text-xs tracking-widest font-bold uppercase">
+                    01/Dashboard
+                </a>
+                <a href="#" class="block p-3 rounded hover:bg-white/5 text-slate-500 font-tech text-xs tracking-widest font-bold uppercase transition">
+                    02/Documents
+                </a>
+                <a href="#" class="block p-3 rounded hover:bg-white/5 text-slate-500 font-tech text-xs tracking-widest font-bold uppercase transition">
+                    03/Statistics
+                </a>
+                <a href="#" class="block p-3 rounded hover:bg-white/5 text-slate-500 font-tech text-xs tracking-widest font-bold uppercase transition">
+                    04/Compliance
+                </a>
+                <div class="pt-10">
+                    <div class="p-4 rounded bg-slate-900/50 border border-slate-800 text-[9px] font-tech text-slate-500 leading-relaxed">
+                        <p class="mb-2">SYSTEM_LOG:</p>
+                        <p class="text-sky-500/50">2026-01-22 09:30:12: Data packets received.</p>
+                        <p>2026-01-22 09:30:15: Encrypted link established.</p>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Terminal -->
+            <main class="col-span-12 lg:col-span-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="glass p-6 rounded-xl relative overflow-hidden">
+                        <div class="scanner absolute top-0 left-0 w-full"></div>
+                        <p class="font-tech text-[10px] text-sky-500 font-bold mb-4 uppercase tracking-widest">Market_Index</p>
+                        <div class="flex items-baseline gap-4">
+                            <span class="text-4xl font-tech font-bold">142.8</span>
+                            <span class="text-xs text-green-400 font-tech">+1.24%</span>
+                        </div>
+                        <div class="mt-4 h-12 w-full flex items-end gap-1">
+                            <div class="flex-grow bg-sky-500/20 h-4"></div>
+                            <div class="flex-grow bg-sky-500/20 h-8"></div>
+                            <div class="flex-grow bg-sky-500/20 h-6"></div>
+                            <div class="flex-grow bg-sky-500/40 h-10"></div>
+                        </div>
+                    </div>
+                    <div class="glass p-6 rounded-xl">
+                        <p class="font-tech text-[10px] text-indigo-400 font-bold mb-4 uppercase tracking-widest">Active_Proposals</p>
+                        <div class="text-4xl font-tech font-bold tracking-tighter">04</div>
+                        <p class="text-[10px] text-slate-500 mt-2">Requires manual override</p>
+                    </div>
+                    <div class="glass p-6 rounded-xl">
+                        <p class="font-tech text-[10px] text-purple-400 font-bold mb-4 uppercase tracking-widest">Security_Level</p>
+                        <div class="text-xl font-tech font-bold text-green-400 tracking-widest">STABLE</div>
+                        <div class="mt-4 flex gap-1">
+                            <div class="h-1 flex-grow bg-green-500/50 rounded"></div>
+                            <div class="h-1 flex-grow bg-green-500/50 rounded"></div>
+                            <div class="h-1 flex-grow bg-slate-700 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <section class="glass rounded-xl overflow-hidden">
+                        <div class="p-4 border-b border-sky-900/30 bg-sky-500/5 flex justify-between items-center">
+                            <h3 class="font-tech text-xs font-bold tracking-[0.2em] uppercase">System_Notices</h3>
+                            <span class="text-[9px] font-tech text-sky-500 underline cursor-pointer">Fetch_All</span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="p-4 bg-slate-950 rounded border border-slate-800 flex items-center justify-between group cursor-pointer hover:border-sky-500/50 transition">
+                                <div class="flex items-center space-x-4">
+                                    <span class="w-1 h-8 bg-sky-500 rounded-full"></span>
+                                    <div>
+                                        <p class="text-xs font-bold">RE_UPDATE: Retail Registration Protocol</p>
+                                        <p class="text-[9px] font-tech text-slate-500 mt-1 uppercase">Due: 2026.01.31</p>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-700 group-hover:text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                            </div>
+                            <div class="p-4 bg-slate-950 rounded border border-slate-800 flex items-center justify-between group cursor-pointer hover:border-sky-500/50 transition">
+                                <div class="flex items-center space-x-4">
+                                    <span class="w-1 h-8 bg-slate-700 rounded-full"></span>
+                                    <div>
+                                        <p class="text-xs font-bold">NEW_FILE: Resilience Grant Guidelines v2.4</p>
+                                        <p class="text-[9px] font-tech text-slate-500 mt-1 uppercase">Added: 2026.01.18</p>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-700 group-hover:text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="glass rounded-xl overflow-hidden">
+                        <div class="p-4 border-b border-sky-900/30 bg-sky-500/5">
+                            <h3 class="font-tech text-xs font-bold tracking-[0.2em] uppercase">Available_Functions</h3>
+                        </div>
+                        <div class="p-6 grid grid-cols-2 gap-4">
+                            <button class="p-4 rounded bg-slate-950 border border-slate-800 text-center hover:bg-sky-500/10 hover:border-sky-500/30 transition group">
+                                <div class="text-[9px] font-tech font-bold text-slate-500 mb-2 group-hover:text-sky-400 transition uppercase tracking-widest">Download</div>
+                                <div class="text-xs font-bold">FORMS_PDF</div>
+                            </button>
+                            <button class="p-4 rounded bg-slate-950 border border-slate-800 text-center hover:bg-indigo-500/10 hover:border-indigo-500/30 transition group">
+                                <div class="text-[9px] font-tech font-bold text-slate-500 mb-2 group-hover:text-indigo-400 transition uppercase tracking-widest">Execute</div>
+                                <div class="text-xs font-bold">APPLY_GRANT</div>
+                            </button>
+                            <button class="p-4 rounded bg-slate-950 border border-slate-800 text-center hover:bg-purple-500/10 hover:border-purple-500/30 transition group">
+                                <div class="text-[9px] font-tech font-bold text-slate-500 mb-2 group-hover:text-purple-400 transition uppercase tracking-widest">Access</div>
+                                <div class="text-xs font-bold">SEMINAR_LINK</div>
+                            </button>
+                            <button class="p-4 rounded bg-slate-950 border border-slate-800 text-center hover:bg-red-500/10 hover:border-red-500/30 transition group">
+                                <div class="text-[9px] font-tech font-bold text-slate-500 mb-2 group-hover:text-red-400 transition uppercase tracking-widest">Open</div>
+                                <div class="text-xs font-bold">SOS_HOTLINE</div>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="mt-auto py-10 text-center">
+        <div class="container mx-auto px-4">
+            <div class="h-px bg-gradient-to-r from-transparent via-sky-900/50 to-transparent mb-8"></div>
+            <p class="font-tech text-[8px] text-slate-600 tracking-[0.8em] uppercase">
+                End_of_Transmission // TPDA_Protocol_v2.6
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
